@@ -1,6 +1,6 @@
 ,Algorithm,ROC AUC Mean,ROC AUC STD,Accuracy Mean,Accuracy STD
+3,GradientBoosting Classifier,98.83,0.23,96.28,0.48
 2,Ada Boost,98.75,0.32,96.14,0.47
-3,GradientBoosting Classifier,98.75,0.27,96.04,0.53
 6,Cat Boost,98.38,0.31,95.64,0.56
 0,Random Forrest Classifier,98.35,0.31,94.61,0.68
 1,Logistic Regression Classifier,92.41,0.96,90.55,0.82

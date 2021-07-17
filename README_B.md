@@ -3,7 +3,7 @@
 <<<<<<< HEAD
 ## Introduction: General Information about the Project
 
-The goal of this project was to create a robut classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
+The goal of this project was to create a robust classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
 
 The dataset includes data of 10127 costumers with 21 features each. The feature that we aim to predict using a model is Attrition_Flag, where Existing Customer is 84% and Attrited Costumer is 16%.
 
@@ -38,11 +38,11 @@ Categorical variables:
 
 
 Following observations have been made:
-* From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
-* From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are high correlated (Avg_Open_To_Buy will be dropped while running models)
-* Edcuation Level, Matrial_Status and Income_Category have and unkown attribute.
+* From the graphs we can see that Dependent_count, Total_Relationship_Count, Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
+* From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are highly correlated (Avg_Open_To_Buy will be dropped while running models)
+* Edcuation Level, Matrial_Status and Income_Category have an unkown attribute.
     * Education_Level the distribution between unkown and uneducated are simliar
-    * Martial_Status unkown and divorce follow a similiar distribution
+    * Martial_Status unknown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
 
 
@@ -50,16 +50,16 @@ Following observations have been made:
 ## Data preprocessing, normalization, missing data, categorical data
 
 Data preprocessing included following steps:
-* Creating various age groups for the age feature
-* One hot encoding for all categorical variables
+* Creating various age groups for the age feature(optional)
+* One hot encoding for all categorical variables(optional)
 * Label encoding or ordinal encoding depeneding on the categorical variable
-* Scaling variables:
+* Scaling variables:(optional)
     * Standard scaler
     * Robust scaler
-* Handling unknown variables
-    * Income_Category: Filling ordinal missing values with modes
-    * Marital Status: filling missing values with dominant value 
-    * Education Level:The category unknown has been left on purpose as this category was too large 
+* Handling unknown variables(mandatory)
+    * Income_Category: Filling ordinal missing values with most freqent value used
+    * Marital Status: Filling missing values most freqent value used
+    * Education Level: The category unknown has been left on purpose as this category was too large 
 
 
 As we will be testing various models with our dataset it is necessary to conduct preprocessing for different types of models.
