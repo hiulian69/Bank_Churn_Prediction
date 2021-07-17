@@ -62,12 +62,12 @@ Data preprocessing included following steps:
     * Education Level:The category unknown has been left on purpose as this category was too large 
 
 
-As we will be testing various models with our dataset it is necessary to conduct preprocessing for different types of models.
+As we will be testing various models with our dataset it is necessary to conduct different preprocessing for different types of models.
 
 Therefore a function has been created which allows us to decide what type of preprocessing should be done depending on which model will be used consequently. The function allows the user to decide wheter one hot encoding and/ or scaling should be used.
 
 
-## Feature Anaysis, Extraction & Selection
+## Feature Analysis, Extraction & Selection
 
 
 
@@ -84,15 +84,19 @@ Different types of models have been created. For non treebased models  one hot e
 * CatBoost Classifier
 
 
+* Artificial Neural Network as Classifier
+
 ## Evaluation and comparisons, various metrics
 
-The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation
+The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. 
+Each model  went through the procedure of stratified cross validation with 10 spilt .
 
 
-Optimal number of trees for random forest model has been analyzed
+Optimal number of trees for random forest model has been analyzed.
 
 
 ## Hyperparameter Optimization
+
 
 
 ## Final evaluations and comparisons
