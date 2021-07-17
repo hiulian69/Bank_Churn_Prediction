@@ -1,5 +1,6 @@
 # Bank_Churn_Prediction
 
+<<<<<<< HEAD
 ## Introduction: General Information about the Project
 
 The goal of this project was to create a robut classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
@@ -194,3 +195,18 @@ Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
 <!-- This project is open source and available under the [... License](). -->
 
 <!-- You don't have to include all sections - just the one's relevant to your project -->
+=======
+
+
+A manager at the bank is disturbed with more and more customers leaving their credit card services. They would really appreciate if one could predict for them who is gonna get churned so they can proactively go to the customer to provide them better services and turn customers' decisions in the opposite direction.
+
+This project is about predicting and finding the group of people , who are most likely to churn . We got the dataset of 10127 costumers with 21 features each.
+With other words , the main goal of the project is to easearch and find best model and results for predicting the target feature : Attrition_Flag, where 
+Existing Customer is 84% and Attrited Costumer is 16% => imbalance that would make it hard for any model to adapt.
+
+##Planning the Preprocessing 
+## DATA ANALYSING & CLEAINING
+
+## MODELS IMPLEMENTATION
+
+>>>>>>> b254f4429c6f24b9b2e7bec27e93a75fb929a278
