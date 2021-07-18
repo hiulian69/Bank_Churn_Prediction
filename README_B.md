@@ -38,7 +38,7 @@ Continuous variables:
 * Total_Trans_Amt
 * Total_Trans_Ct
 
-![Histogram showing continuous variables](/Pictures/Continuous_variables.png)
+![Alt Text](/Pictures/Continuous_variables.png)
 
 Categorical variables:
 * Gender
@@ -52,13 +52,13 @@ Categorical variables:
 * Months inactive 12 months
 * Contracts count 12 months
 
-![Histogram showing categorical variables](/Pictures/Categorical_variables.png)
+![Alt Text](/Pictures/Categorical_variables.png)
 
 
-**Following observations have been made:**
+Following observations have been made:
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
-* From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are high correlated (Avg_Open_To_Buy will be dropped while running models)
-* Edcuation Level, Matrial_Status and Income_Category have and unkown attribute.
+* From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are highly correlated (Avg_Open_To_Buy will be dropped while running models)
+* Edcuation Level, Matrial_Status and Income_Category have an unkown attribute.
     * Education_Level the distribution between unkown and uneducated are simliar
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
@@ -66,7 +66,7 @@ Categorical variables:
 
 ## Data preprocessing, normalization, missing data, categorical data
 
-**Data preprocessing included following steps:**
+Data preprocessing included following steps:
 * Creating various age groups for the age feature
 * One hot encoding for all categorical variables
 * Label encoding or ordinal encoding depeneding on the categorical variable
@@ -77,15 +77,15 @@ Categorical variables:
 * Handling unknown variables
     * Income_Category: Filling ordinal missing values with modes
     * Marital Status: filling missing values with dominant value 
-    * Education Level:The category unknown has been left on purpose as this category was too large 
+    * Education Level:The category unknown has been left on purpose as this category was too large to impute 
 
 
-As we will be testing various models with our dataset it is necessary to conduct preprocessing for different types of models.
+As we will be testing various models with our dataset it is necessary to conduct different preprocessing for different types of models.
 
 Therefore a function has been created which allows us to decide what type of preprocessing should be done depending on which model will be used consequently. The function allows the user to decide wheter one hot encoding and/ or scaling should be used.
 
 
-## Feature Anaysis, Extraction & Selection
+## Feature Analysis, Extraction & Selection
 
 Logistic regression was conducted in order to understand the importance of the features.
 
@@ -102,20 +102,37 @@ Different types of models have been created. For non treebased models  one hot e
 * SVM Classifier
 * KNeighbors Classifier
 * CatBoost Classifier
+
+
+<<<<<<< Updated upstream
 * Artificial Neural Network as Classifier
+=======
+>>>>>>> Stashed changes
 
 ## Evaluation and comparisons, various metrics
 
-The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. Each model went through the procedure of stratified cross validation with 10 spilt .
+The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. 
+Each model  went through the procedure of stratified cross validation with 10 spilt .
 
 ![Alt Text](/Pictures/Models.png)
 
+<<<<<<< Updated upstream
+Optimal number of trees for random forest model has been analyzed.
+
+
+## Hyperparameter Optimization
+
+
+
+## Final evaluations and comparisons
+=======
 ![Alt Text](/Pictures/Models2.png)
+>>>>>>> Stashed changes
 
 
 Optimal number of trees for random forest model has been analyzed
 
-![Alt Text](/Pictures/Trees.png)
+![Alt Text](/Pictures/Models2.png)
 
 
 ## Hyperparameter Optimization
@@ -133,12 +150,7 @@ You can see the visual representation of our results below in the form of a conf
 
 ![Alt Text](/Pictures/ROC.png)
 
-Randomized search on hyper parameters was also performed in order to have a contrast to grid  search cv.
-
-Following results were obtained:
-* accuracy score:
-* mean absolute error:
-* mean squared error:
+Random CV
 
 ## Final evaluations and comparisons
 
