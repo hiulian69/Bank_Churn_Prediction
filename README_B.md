@@ -178,6 +178,7 @@ import pandas as pd
 
 import matplotlib.pyplot as plt
 import seaborn as sns
+from prettytable import PrettyTable
 import sklearn.preprocessing
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
