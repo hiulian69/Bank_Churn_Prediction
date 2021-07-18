@@ -133,7 +133,12 @@ You can see the visual representation of our results below in the form of a conf
 
 ![Alt Text](/Pictures/ROC.png)
 
-Random CV
+Randomized search on hyper parameters was also performed in order to have a contrast to grid  search cv.
+
+Following results were obtained:
+* accuracy score:
+* mean absolute error:
+* mean squared error:
 
 ## Final evaluations and comparisons
 
