@@ -1,12 +1,29 @@
 # Bank_Churn_Prediction
 
+## Table of Contents
+* [Introduction] (## Introduction: General Information about the Project)
+* [Understanding the Data] (## Understanding the Data: Read data, visualize, basic statistics)
+* [Data Preprocessing] (## Data preprocessing, normalization, missing data, categorical data)
+* [Feature Analysis, Extraction and Selection] (## Feature Anaysis, Extraction & Selection)
+* [Classification Models] (## Classification models)
+* [Evaluation and Comparison] (## Evaluation and comparisons, various metrics)
+* [Hyperparamter Optimization] (## Hyperparameter Optimization)
+* [Final Evaluations and Comparisons] (## Final evaluations and comparisons)
+* [Discussion, Conclusion, Future Improvements] (## Discussion, Conclusions, Future improvements)
+* [Appendix: Technologies Used] (## Appendix: Technologies used)
+* [Acknowledgements] (## Acknowledgements)
+
+
+
 ## Introduction: General Information about the Project
 
 The goal of this project was to create a robut classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
 
 The dataset includes data of 10127 costumers with 21 features each. The feature that we aim to predict using a model is Attrition_Flag, where Existing Customer is 84% and Attrited Costumer is 16%.
 
-## Understanding Data: Read data, visualize, basic statistics
+Detailed description with all of the features is found in the document "Models"
+
+## Understanding the Data: Read data, visualize, basic statistics
 
 The first step was to get a better understanding of out dataset. We performed some descriptive statistics, identified which variables are continues and categorical, as well as checking for missing data.
 
@@ -20,6 +37,8 @@ Continuous variables:
 * Total_Revolving_Bal
 * Total_Trans_Amt
 * Total_Trans_Ct
+
+![Alt Text](/Pictures/Continuous_variables.png)
 
 Categorical variables:
 * Gender
@@ -36,7 +55,6 @@ Categorical variables:
 ![Alt Text](/Pictures/Categorical_variables.png)
 
 
-
 Following observations have been made:
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
 * From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are high correlated (Avg_Open_To_Buy will be dropped while running models)
@@ -44,7 +62,6 @@ Following observations have been made:
     * Education_Level the distribution between unkown and uneducated are simliar
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
-
 
 
 ## Data preprocessing, normalization, missing data, categorical data
@@ -56,6 +73,7 @@ Data preprocessing included following steps:
 * Scaling variables:
     * Standard scaler
     * Robust scaler
+        *Credit_Limit', 'Total_Amt_Chng_Q4_Q1','Total_Trans_Amt'- These features will be scaled using robust scaler due to assimetrical distribution
 * Handling unknown variables
     * Income_Category: Filling ordinal missing values with modes
     * Marital Status: filling missing values with dominant value 
@@ -69,7 +87,9 @@ Therefore a function has been created which allows us to decide what type of pre
 
 ## Feature Analysis, Extraction & Selection
 
+Logistic regression was conducted in order to understand the importance of the features.
 
+![Alt Text](/Pictures/Important_features.png)
 
 ## Classification models
 
@@ -84,14 +104,19 @@ Different types of models have been created. For non treebased models  one hot e
 * CatBoost Classifier
 
 
+<<<<<<< Updated upstream
 * Artificial Neural Network as Classifier
+=======
+>>>>>>> Stashed changes
 
 ## Evaluation and comparisons, various metrics
 
 The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. 
 Each model  went through the procedure of stratified cross validation with 10 spilt .
 
+![Alt Text](/Pictures/Models.png)
 
+<<<<<<< Updated upstream
 Optimal number of trees for random forest model has been analyzed.
 
 
@@ -100,102 +125,94 @@ Optimal number of trees for random forest model has been analyzed.
 
 
 ## Final evaluations and comparisons
+=======
+![Alt Text](/Pictures/Models2.png)
+>>>>>>> Stashed changes
 
 
-## Discussion, Concusions, Future improvements
+Optimal number of trees for random forest model has been analyzed
+
+![Alt Text](/Pictures/Models2.png)
+
+
+## Hyperparameter Optimization
+
+Grid search CV was used for hyperparameter tuning in order to determine the optimal values of our best model, namely Gradient Boost classifier.
+
+Following results were obtained:
+* accuracy score:
+* mean absolute error:
+* mean squared error:
+
+You can see the visual representation of our results below in the form of a confusion matrix as well as the ROC curve
+
+![Alt Text](/Pictures/Confussion_matrix.png)
+
+![Alt Text](/Pictures/ROC.png)
+
+Random CV
+
+## Final evaluations and comparisons
+
+Picture of the decision tree from Anja
+
+Interpretation of the coefficients
+
+
+## Discussion, Conclusions, Future improvements
 which features are the most important
 how will you explain the model to the management of the bank
 how much benefit/improvement should the bank expect
 
+Conclusion
+*
+
+Future improvements
+* What needs to be taken into consideration when interpreting the models is that the predictions are based on a much smaller group of Attrited Costumers than Existing Customers
 
 
+## Appendix: Technologies used
 
-# Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+import numpy as np
+import pandas as pd
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Screenshots](#screenshots)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
+import matplotlib.pyplot as plt
+import seaborn as sns
+import sklearn.preprocessing
+from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.pipeline import Pipeline,make_pipeline
+from sklearn.feature_selection import SelectKBest,chi2
+from sklearn.tree import DecisionTreeClassifier
 
+from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import RobustScaler
 
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+from numpy import mean
+from numpy import std
+from sklearn.datasets import make_classification
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import RepeatedStratifiedKFold
+from sklearn.model_selection import train_test_split
 
 
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
-## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
-
-
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
+from category_encoders.cat_boost import CatBoostEncoder
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
 
+Thank you to the whole Brainster Team for the great learning experience throughout the programm.
+Special thanks to Igor for your constant support and guidance during the final project.
 
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Anja, Hunter, Julian, & Barbora
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
