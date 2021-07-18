@@ -38,7 +38,7 @@ Continuous variables:
 * Total_Trans_Amt
 * Total_Trans_Ct
 
-![Alt Text](/Pictures/Continuous_variables.png)
+![Histogram showing continuous variables](/Pictures/Continuous_variables.png)
 
 Categorical variables:
 * Gender
@@ -52,10 +52,10 @@ Categorical variables:
 * Months inactive 12 months
 * Contracts count 12 months
 
-![Alt Text](/Pictures/Categorical_variables.png)
+![Histogram showing categorical variables](/Pictures/Categorical_variables.png)
 
 
-Following observations have been made:
+**Following observations have been made:**
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
 * From the scatter plot we indentify that Credit_Limit and Avg_Open_To_Buy are high correlated (Avg_Open_To_Buy will be dropped while running models)
 * Edcuation Level, Matrial_Status and Income_Category have and unkown attribute.
@@ -66,7 +66,7 @@ Following observations have been made:
 
 ## Data preprocessing, normalization, missing data, categorical data
 
-Data preprocessing included following steps:
+**Data preprocessing included following steps:**
 * Creating various age groups for the age feature
 * One hot encoding for all categorical variables
 * Label encoding or ordinal encoding depeneding on the categorical variable
@@ -80,12 +80,12 @@ Data preprocessing included following steps:
     * Education Level:The category unknown has been left on purpose as this category was too large 
 
 
-As we will be testing various models with our dataset it is necessary to conduct different preprocessing for different types of models.
+As we will be testing various models with our dataset it is necessary to conduct preprocessing for different types of models.
 
 Therefore a function has been created which allows us to decide what type of preprocessing should be done depending on which model will be used consequently. The function allows the user to decide wheter one hot encoding and/ or scaling should be used.
 
 
-## Feature Analysis, Extraction & Selection
+## Feature Anaysis, Extraction & Selection
 
 Logistic regression was conducted in order to understand the importance of the features.
 
@@ -102,37 +102,20 @@ Different types of models have been created. For non treebased models  one hot e
 * SVM Classifier
 * KNeighbors Classifier
 * CatBoost Classifier
-
-
-<<<<<<< Updated upstream
 * Artificial Neural Network as Classifier
-=======
->>>>>>> Stashed changes
 
 ## Evaluation and comparisons, various metrics
 
-The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. 
-Each model  went through the procedure of stratified cross validation with 10 spilt .
+The models have been compared with regards to mean, standard deviation, accuracy mean, and accuracy standard deviation. Each model went through the procedure of stratified cross validation with 10 spilt .
 
 ![Alt Text](/Pictures/Models.png)
 
-<<<<<<< Updated upstream
-Optimal number of trees for random forest model has been analyzed.
-
-
-## Hyperparameter Optimization
-
-
-
-## Final evaluations and comparisons
-=======
 ![Alt Text](/Pictures/Models2.png)
->>>>>>> Stashed changes
 
 
 Optimal number of trees for random forest model has been analyzed
 
-![Alt Text](/Pictures/Models2.png)
+![Alt Text](/Pictures/Trees.png)
 
 
 ## Hyperparameter Optimization
