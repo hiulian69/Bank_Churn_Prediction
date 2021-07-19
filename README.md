@@ -189,43 +189,19 @@ Future improvements
 * What needs to be taken into consideration when interpreting the models is that the predictions are based on a much smaller group of Attrited Costumers than Existing Customers
 
 
-## Appendix: Technologies used
+## Appendix: Required packages version
 
-import numpy as np
-import pandas as pd
-
-import matplotlib.pyplot as plt
-import seaborn as sns
-from prettytable import PrettyTable
-import sklearn.preprocessing
-from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.pipeline import Pipeline,make_pipeline
-from sklearn.feature_selection import SelectKBest,chi2
-from sklearn.tree import DecisionTreeClassifier
-
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import RobustScaler
-
-from numpy import mean
-from numpy import std
-from sklearn.datasets import make_classification
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import RepeatedStratifiedKFold
-from sklearn.model_selection import train_test_split
+seaborn==0.9.0
+scikit-learn==0.24.1
+pandas==0.25.1
+numpy==1.17.2
+matplotlib==3.1.1
+seaborn==0.9.0
+prettytable==2.1.0
+missingno==0.4.2
 
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.ensemble import AdaBoostClassifier
-from sklearn.ensemble import GradientBoostingClassifier
 
-from category_encoders.cat_boost import CatBoostEncoder
 
 
 ## Acknowledgements
