@@ -201,7 +201,12 @@ prettytable==2.1.0
 missingno==0.4.2
 
 
+## Team Members
 
+Anja 
+Hunter
+Julian 
+Barbora
 
 
 ## Acknowledgements
@@ -219,5 +224,5 @@ And also our support Team:
 - Aleksandar Gjurchevski
 - Maya Cvetanoska
 
-Anja, Hunter, Julian, & Barbora
+
 
