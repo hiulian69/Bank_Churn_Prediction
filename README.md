@@ -65,8 +65,9 @@ Following observations have been made:
 
 
 
+Interpretation of the coefficients
 
-
+![Alt Text](/Pictures/Feature_Importance.png)
 
 
 ## Data preprocessing, Normalization, Missing data, Categorical data, Feature Extraction & Selection
@@ -103,11 +104,9 @@ Different types of models have been created. For non treebased models  one hot e
 * KNeighbors Classifier
 * CatBoost Classifier
 
-
-<<<<<<< Updated upstream
 * Artificial Neural Network as Classifier
-=======
->>>>>>> Stashed changes
+
+
 
 ## Evaluation and comparisons, various metrics
 
@@ -116,7 +115,6 @@ Each model  went through the procedure of stratified cross validation with 10 sp
 
 ![Alt Text](/Pictures/Models.png)
 
-<<<<<<< Updated upstream
 Optimal number of trees for random forest model has been analyzed.
 
 
@@ -124,7 +122,7 @@ Optimal number of trees for random forest model has been analyzed.
 
 
 
-## Final evaluations and comparisons
+## Evaluations and comparisons
 =======
 ![Alt Text](/Pictures/Models2.png)
 >>>>>>> Stashed changes
@@ -160,20 +158,16 @@ Following results were obtained:
 * accuracy score: 0.972
 
 
+## Final evaluations 
 You can see the visual representation of our results below in the form of a confusion matrix as well as the ROC curve
 
 ![Alt Text](/Pictures/Confussion_matrix.png)
 
+
 ![Alt Text](/Pictures/ROC.png)
 
-Random CV
 
-## Final evaluations and comparisons
 
-Picture of the decision tree from Anja
-
-Interpretation of the coefficients
-![Alt Text](/Pictures/Feature_Importance.png)
 
 ## Discussion, Conclusions, Future improvements
 
@@ -193,21 +187,21 @@ Future improvements
 
 ## Appendix: Required packages version
 
-# seaborn==0.9.0
-# scikit-learn==0.24.1
-# pandas==0.25.1
-# numpy==1.17.2
-# matplotlib==3.1.1
-# seaborn==0.9.0
-# prettytable==2.1.0
-# missingno==0.4.2
+seaborn==0.9.0
+scikit-learn==0.24.1
+pandas==0.25.1
+numpy==1.17.2
+matplotlib==3.1.1
+seaborn==0.9.0
+prettytable==2.1.0
+missingno==0.4.2
 
 
 ## Team Members
 
-Anja 
-Barbora
-Hunter
+Anja Pećnik
+Barbora Betkova
+Hunter Marsh
 Horia-Iulian State 
 
 
