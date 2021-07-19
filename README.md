@@ -23,7 +23,7 @@ The dataset includes data of 10127 costumers with 21 features each. The feature 
 
 Detailed description with all of the features is found in the document "Models"
 
-## Understanding the Data: Read data, visualize, basic statistics
+## Understanding the Data: Read data, visualize, basic statistics, Feature Analysis
 
 The first step was to get a better understanding of out dataset. We performed some descriptive statistics, identified which variables are continues and categorical, as well as checking for missing data.
 
@@ -63,7 +63,7 @@ Following observations have been made:
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
 
-## Feature Analysis, Extraction & Selection
+
 
 
 
@@ -71,7 +71,7 @@ Logistic regression was conducted in order to understand the importance of the f
 
 ![Alt Text](/Pictures/Important_features.png)
 
-## Data preprocessing, normalization, missing data, categorical data
+## Data preprocessing, Normalization, Missing data, Categorical data, Feature Extraction & Selection
 
 Data preprocessing included following steps:
 * Creating various age groups for the age feature
