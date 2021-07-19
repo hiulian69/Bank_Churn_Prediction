@@ -71,6 +71,7 @@ Following observations have been made:
     * Education_Level the distribution between unkown and uneducated are simliar
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
+* Multiply modal features will be binned for non-tree models (Total_Trans_Amt & Total_Trans_Ct)
 
 
 
