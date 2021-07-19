@@ -63,6 +63,13 @@ Following observations have been made:
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
 
+## Feature Analysis, Extraction & Selection
+
+
+
+Logistic regression was conducted in order to understand the importance of the features.
+
+![Alt Text](/Pictures/Important_features.png)
 
 ## Data preprocessing, normalization, missing data, categorical data
 
@@ -85,11 +92,6 @@ As we will be testing various models with our dataset it is necessary to conduct
 Therefore a function has been created which allows us to decide what type of preprocessing should be done depending on which model will be used consequently. The function allows the user to decide wheter one hot encoding and/ or scaling should be used.
 
 
-## Feature Analysis, Extraction & Selection
-
-Logistic regression was conducted in order to understand the importance of the features.
-
-![Alt Text](/Pictures/Important_features.png)
 
 ## Classification models
 
@@ -120,7 +122,7 @@ Each model  went through the procedure of stratified cross validation with 10 sp
 Optimal number of trees for random forest model has been analyzed.
 
 
-## Hyperparameter Optimization
+
 
 
 
@@ -225,7 +227,17 @@ from category_encoders.cat_boost import CatBoostEncoder
 ## Acknowledgements
 
 Thank you to the whole Brainster Team for the great learning experience throughout the programm.
-Special thanks to Igor for your constant support and guidance during the final project.
+Special thanks to our instructors:
+- Igor Trepveski
+- Viktor Domanzetoski
+- Blagoj Kostovski
+- Filip Nikolovski
+- Marko Karbevski
+
+And also our support Team:
+- Aleksandar Chaminski
+- Aleksandar Gjurchevski
+- Maya Cvetanoska
 
 Anja, Hunter, Julian, & Barbora
 
