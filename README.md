@@ -204,9 +204,10 @@ missingno==0.4.2
 ## Team Members
 
 Anja 
-Hunter
-Julian 
 Barbora
+Hunter
+Horia-Iulian State 
+
 
 
 ## Acknowledgements
@@ -218,6 +219,7 @@ Special thanks to our instructors:
 - Blagoj Kostovski
 - Filip Nikolovski
 - Marko Karbevski
+- Viktorija Doneva
 
 And also our support Team:
 - Aleksandar Chaminski
