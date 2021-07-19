@@ -150,8 +150,12 @@ parameters = {'n_estimators' : [150,200,250,300],
 with 4 x 6 x 3 x 3 x 6 parameters and again 10-split Folds , went to 38.000+ fits, which took 18 hours to complete . Best paramaters :
 
 ```
-GradientBoostingClassifier(max_depth=5, max_features='log2', n_estimators=300,
-                           random_state=0)
+ {'learning_rate': 0.1,
+  'max_depth': 5,
+  'max_features': 'log2',
+  'min_samples_split': 2,
+  'n_estimators': 300,
+  'random_state': 0})
 ```
 
 Following results were obtained:
