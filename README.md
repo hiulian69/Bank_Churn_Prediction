@@ -27,7 +27,7 @@ Detailed description with all of the features is found in the document "Models"
 
 The first step was to get a better understanding of out dataset. We performed some descriptive statistics, identified which variables are continuous and categorical, as well as checking for missing data.
 
-Features whom data type is integer was investigated further for accurate classification (Months_on_book included as well)
+Features is data type is integer was investigated further for accurate classification (Months_on_book included as well)
 
 ![Alt Text](/Pictures/bar_graphs.png)
 
