@@ -56,7 +56,7 @@ Categorical variables:
 * Contracts count 12 months
 
 ![Alt Text](/Pictures/Categorical_variables.png)
-
+![Alt Text](/Pictures/bar_graphs.png)
 
 Following observations have been made:
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
@@ -167,7 +167,19 @@ Following features have been identified as best predictors of churn:
 
 ![Alt Text](/Pictures/Important_features.png)
 
+Attrited customers have lower:
+* Total Transaction Amount (Last 12 months)
+* Total Transaction Count (Last 12 months)
+* Total Revolving Balance on the Credit Card
+* Change in Transaction Count (Q4 over Q1)
+* Change in Transaction Amount (Q4 over Q1)
+* Average Card Utilization Ratio
+* Credit Limit on the Credit Card
 
+
+Total no. of products held by the customer
+No. of Contacts in the last 12 months
+No. of months inactive in the last 12 months
 How much benefit/improvement should the bank expect
 
 Conclusion
