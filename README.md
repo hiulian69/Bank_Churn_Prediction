@@ -156,6 +156,7 @@ You can see the visual representation of our results below in the form of a conf
 
 ![Alt Text](/Pictures/Confussion_matrix.png)
 
+![Alt Text](/Pictures/eval_table.png)
 
 ![Alt Text](/Pictures/ROC.png)
 
