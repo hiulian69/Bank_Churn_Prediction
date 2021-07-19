@@ -173,13 +173,13 @@ Random CV
 Picture of the decision tree from Anja
 
 Interpretation of the coefficients
-![Alt Text](/Pictures/Feature_
+![Alt Text](/Pictures/Feature_Importance.png)
 
 ## Discussion, Conclusions, Future improvements
 
 Logistic regression was conducted in order to understand the importance of the features.
 
-![Alt Text](/Pictures/Feature_Importance.pg)
+![Alt Text](/Pictures/Important_features.png)
 
 how will you explain the model to the management of the bank
 how much benefit/improvement should the bank expect
