@@ -191,14 +191,14 @@ Future improvements
 
 ## Appendix: Required packages version
 
-seaborn==0.9.0
-scikit-learn==0.24.1
-pandas==0.25.1
-numpy==1.17.2
-matplotlib==3.1.1
-seaborn==0.9.0
-prettytable==2.1.0
-missingno==0.4.2
+# seaborn==0.9.0
+# scikit-learn==0.24.1
+# pandas==0.25.1
+# numpy==1.17.2
+# matplotlib==3.1.1
+# seaborn==0.9.0
+# prettytable==2.1.0
+# missingno==0.4.2
 
 
 ## Team Members
