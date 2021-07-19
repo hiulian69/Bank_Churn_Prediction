@@ -25,7 +25,13 @@ Detailed description with all of the features is found in the document "Models"
 
 ## Understanding the Data: Read data, visualize, basic statistics, Feature Analysis
 
-The first step was to get a better understanding of out dataset. We performed some descriptive statistics, identified which variables are continues and categorical, as well as checking for missing data.
+The first step was to get a better understanding of out dataset. We performed some descriptive statistics, identified which variables are continuous and categorical, as well as checking for missing data.
+
+Features whom data type is integer was investigated further for accurate classification (Months_on_book included as well)
+
+![Alt Text](/Pictures/bar_graphs.png)
+
+
 
 Continuous variables:
 * Months_on_book
@@ -66,11 +72,6 @@ Following observations have been made:
     * Martial_Status unkown and divorce follow a similiar distribution
 * All of the continous varaiabls will need to be scaled to deal with the varying magnitudes
 
-
-
-Interpretation of the coefficients
-
-![Alt Text](/Pictures/Feature_Importance.png)
 
 
 ## Data preprocessing, Normalization, Missing data, Categorical data, Feature Extraction & Selection
