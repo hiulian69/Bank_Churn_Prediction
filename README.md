@@ -39,6 +39,9 @@ Continuous variables:
 * Total_Trans_Ct
 
 ![Alt Text](/Pictures/Continuous_variables.png)
+![Alt Text](/Pictures/Continuous_features.png)
+
+
 
 Categorical variables:
 * Gender
