@@ -137,12 +137,24 @@ Optimal number of trees for random forest model has been analyzed
 
 ## Hyperparameter Optimization
 
-Grid search CV was used for hyperparameter tuning in order to determine the optimal values of our best model, namely Gradient Boost classifier.
+Grid search CV was used for hyperparameter tuning in order to determine the optimal values of our best model, namely Gradient Boost classifier. For this phase of the projected   a tree based model was chosen , after observing that those models handle the data the best . Having scikit learn s GradientBoosting with best Accuracy score on a 10-split stratified K Fold , we decided to start search for best parameters for the problem. For that we used GridSearch algorithm.
+
+parameters = {'n_estimators' : [150,200,250,300],
+ 'min_samples_split' : [0.2, 0.4, 0.6, 0.8, 1.0, 2], 
+'learning_rate' : [0.01, 0.1, 1], 
+'max_features':[None, 'log2', 'sqrt'], 
+'max_depth' : [1,2,3,4,5,7],
+
+with 4 x 6 x 3 x 3 x 6 parameters and again 10-split Folds , went to 38.000+ fits, which took 18 hours to complete . Best paramaters :
+
+```
+GradientBoostingClassifier(max_depth=5, max_features='log2', n_estimators=300,
+                           random_state=0)
+```
 
 Following results were obtained:
-* accuracy score:
-* mean absolute error:
-* mean squared error:
+* accuracy score: 0.972
+
 
 You can see the visual representation of our results below in the form of a confusion matrix as well as the ROC curve
 
