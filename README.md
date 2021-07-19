@@ -118,24 +118,12 @@ Each model  went through the procedure of stratified cross validation with 10 sp
 Optimal number of trees for random forest model has been analyzed.
 
 
-
-
-
-
-## Evaluations and comparisons
-=======
-![Alt Text](/Pictures/Models2.png)
->>>>>>> Stashed changes
-
-
-Optimal number of trees for random forest model has been analyzed
-
 ![Alt Text](/Pictures/Models2.png)
 
 
 ## Hyperparameter Optimization
 
-Grid search CV was used for hyperparameter tuning in order to determine the optimal values of our best model, namely Gradient Boost classifier. For this phase of the projected   a tree based model was chosen , after observing that those models handle the data the best . Having scikit learn s GradientBoosting with best Accuracy score on a 10-split stratified K Fold , we decided to start search for best parameters for the problem. For that we used GridSearch algorithm.
+Grid search CV was used for hyperparameter tuning in order to determine the optimal values of our best model, namely Gradient Boost classifier. For this phase of the project a tree based model was chosen , after observing that those models handle the data the best . Having scikit learn s GradientBoosting with best Accuracy score on a 10-split stratified K Fold , we decided to start search for best parameters for the problem. For that we used GridSearch algorithm.
 
 parameters = {'n_estimators' : [150,200,250,300],
  'min_samples_split' : [0.2, 0.4, 0.6, 0.8, 1.0, 2], 
@@ -171,12 +159,13 @@ You can see the visual representation of our results below in the form of a conf
 
 ## Discussion, Conclusions, Future improvements
 
-Logistic regression was conducted in order to understand the importance of the features.
+Following features have been identified as best predictors of churn:
+
 
 ![Alt Text](/Pictures/Important_features.png)
 
-how will you explain the model to the management of the bank
-how much benefit/improvement should the bank expect
+
+How much benefit/improvement should the bank expect
 
 Conclusion
 *
@@ -192,7 +181,6 @@ scikit-learn==0.24.1
 pandas==0.25.1
 numpy==1.17.2
 matplotlib==3.1.1
-seaborn==0.9.0
 prettytable==2.1.0
 missingno==0.4.2
 
