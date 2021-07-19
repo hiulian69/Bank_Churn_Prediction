@@ -168,6 +168,7 @@ Following features have been identified as best predictors of churn:
 ![Alt Text](/Pictures/Important_features.png)
 
 Attrited customers have
+
 Lower:
 * Number and Amount of Transaction in the last 12 months
 * Total Revolving Balance on the Credit Card
@@ -175,11 +176,13 @@ Lower:
 * Average Card Utilization Ratio
 * No. of Contacts in the last 12 months
 * Credit Limit on the Credit Card
+
 Higher:
 * No. of months inactive in the last 12 months
+
 In additon to:
 * negative change in Transaction Count (Q4 over Q1)
-* slower growth of Transaction Amount (Q4 over Q1)
+* no growth of Transaction Amount (Q4 over Q1)
 
 Conclusions:
 * Declining activity in account tends to lead to churn - good basis for marketing strategy
