@@ -121,7 +121,7 @@ Each model  went through the procedure of stratified cross validation with 10 sp
 Optimal number of trees for random forest model has been analyzed.
 
 
-![Alt Text](/Pictures/Models2.png)
+![Alt Text](/Pictures/Trees.png)
 
 
 ## Hyperparameter Optimization
