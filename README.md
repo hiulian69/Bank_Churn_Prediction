@@ -98,6 +98,21 @@ Therefore a function has been created which allows us to decide what type of pre
 
 
 ## Classification models
+* Artificial Neural Network as Classifier
+
+
+Creating a Neural Network didn't disappoint as result , however :
+
+- having a dataset of only 10k entry is far from enough.
+- small set of features
+- NN works better with homogenous data
+- unlike data from images, audio and language, there can be little variation in a column of a table
+
+Best result of a NN with 3,953 was an accuracy of 0.94
+
+![Alt Text](/Pictures/nn_result.png)
+
+* Classical Mashine Learning algorthims
 
 Different types of models have been created. For non treebased models  one hot encoding and scaling is necessary where as for treebased models label encoding and no scaling is necessary.
 
@@ -108,9 +123,6 @@ Different types of models have been created. For non treebased models  one hot e
 * SVM Classifier
 * KNeighbors Classifier
 * CatBoost Classifier
-
-* Artificial Neural Network as Classifier
-
 
 
 ## Evaluation and comparisons, various metrics
@@ -148,7 +160,7 @@ with 4 x 6 x 3 x 3 x 6 parameters and again 10-split Folds , went to 38.000+ fit
 ```
 
 Following results were obtained:
-* accuracy score: 0.972
+* accuracy score: 0.973
 
 
 ## Final evaluations 
