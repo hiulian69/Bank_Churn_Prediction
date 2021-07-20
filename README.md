@@ -213,6 +213,8 @@ Future improvements
 * What needs to be taken into consideration when interpreting the models is that the predictions are based on a much smaller group of Attrited Costumers than Existing Customers
 
 
+
+
 ## Appendix: Required packages version
 
 * seaborn==0.9.0
@@ -230,6 +232,8 @@ Future improvements
 - Barbora Betkova
 - Hunter Marsh
 - Horia-Iulian State 
+
+
 
 
 
