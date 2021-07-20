@@ -29,7 +29,7 @@ The first step was to get a better understanding of out dataset. We performed so
 
 Features is data type is integer was investigated further for accurate classification (Months_on_book included as well)
 
-![Alt Text](/Pictures/bar_graphs.png)
+![Alt Text](/Pictures/bar_graphs_1.png)
 
 
 
