@@ -114,7 +114,7 @@ Best result of a NN with 3,953 was an accuracy of 0.94
 
 * Classical Mashine Learning algorithms
 
-Different types of models have been created. For non treebased models  one hot encoding and scaling is necessary where as for treebased models label encoding and no scaling is necessary.
+Different types of models have been created. For non-tree-based models,  one-hot encoding and scaling is necessary,  where as for treebased models label encoding and no scaling has been applied.
 
 * Random Forrest classifier
 * Logistic Regression Classifier
