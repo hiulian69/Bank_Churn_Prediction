@@ -160,6 +160,8 @@ You can see the visual representation of our results below in the form of a conf
 
 As expected, due to the unbalanced data set the model's precision score in predicting if a customer will churn outperforms the recall score. Capturing more data in the future would help the model in better generalizing which customers will churn. All things considered, the recall score of 87% is still pretty good.
 
+Lowering the prediction probality cut-off could potentially help 
+
 ![Alt Text](/Pictures/ROC.png)
 
 
