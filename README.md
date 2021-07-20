@@ -62,7 +62,7 @@ Categorical variables:
 * Contracts count 12 months
 
 ![Alt Text](/Pictures/Categorical_variables.png)
-![Alt Text](/Pictures/bar_graphs_1.png)
+
 
 Following observations have been made:
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
