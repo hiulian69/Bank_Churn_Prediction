@@ -29,7 +29,7 @@ The first step was to get a better understanding of out dataset. We performed so
 
 Features is data type is integer was investigated further for accurate classification (Months_on_book included as well)
 
-![Alt Text](/Pictures/bar_graphs_1.png)
+![Alt Text](/Pictures/bar_graphs.png)
 
 
 
@@ -62,7 +62,7 @@ Categorical variables:
 * Contracts count 12 months
 
 ![Alt Text](/Pictures/Categorical_variables.png)
-![Alt Text](/Pictures/bar_graphs.png)
+![Alt Text](/Pictures/bar_graphs_1.png)
 
 Following observations have been made:
 * From the graphs we can see that Dependent_count Total_Relationship_Count,Months_Inactive_12_mon and Contacts_Count_12_mon are technically categorical variables as opposed to appearing as continuous at first
@@ -156,7 +156,7 @@ You can see the visual representation of our results below in the form of a conf
 
 ![Alt Text](/Pictures/Confussion_matrix.png)
 
-![Alt Text](/Pictures/eval_table.png)
+![Alt Text](/Pictures/bar_graphs_1.png)
 
 As expected, due to the unbalanced data set the model's precision score in predicting if a customer will churn outperforms the recall score. Capturing more data in the future would help the model in better generalizing which customers will churn. All things considered, the recall score of 88% is still pretty good.
 
