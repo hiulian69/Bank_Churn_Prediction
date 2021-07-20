@@ -17,7 +17,7 @@
 
 ## Introduction: General Information about the Project
 
-The goal of this project was to create a robut classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
+The goal of this project was to create a robust classifier und use the data in order to be able to predict and find a group of people who are most likely to churn. This information should ultimately allow employees of the bank to proactively target this group of customers to provide them with better services and turn customers’ decisions in the opposite direction.
 
 The dataset includes data of 10127 costumers with 21 features each. The feature that we aim to predict using a model is Attrition_Flag, where Existing Customer is 84% and Attrited Costumer is 16%.
 
@@ -214,10 +214,10 @@ Future improvements
 
 ## Team Members
 
-Anja Pećnik
-Barbora Betkova
-Hunter Marsh
-Horia-Iulian State 
+- Anja Pećnik
+- Barbora Betkova
+- Hunter Marsh
+- Horia-Iulian State 
 
 
 
